@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    scroll-behavior: smooth;
+    /* overflow-x: hidden; */
+}
+
+.control-arrow{
+    background-color: rgb(46, 44, 44) !important;
+}
+.slide{
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sentiment Analysis</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script>
+      function analyze() {
+        var text = $('#input-box').val();
+        $.post('/test', {text: text}, function(data) {
+          $('#output-box').text('Positive score: ' + data.pos +
+                                 '\nNegative score: ' + data.neg +
+                                 '\nNeutral score: ' + data.neu +
+                                 '\nCompound score: ' + data.compound);
+        }, 'json');
+      }
+    </script>
+    <style>
+      .container{
+        margin-top: 30px;
+      }
+      .out{
+        margin-top: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-xs-12">
+          <label for="input-box"><h4>Enter text to analyze Sentiment Score : </h4></label>
+          <br>
+          <textarea id="input-box" class="form-control" rows="10"></textarea>
+          <br>
+          <button class="btn btn-primary" onclick="analyze()">Analyze</button>
+          <br>
+        <div class="out">
+          <label for="output-box"><h4>Output:</h4></label>
+          <br>
+          <textarea id="output-box" class="form-control" rows="10"></textarea>
+        </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

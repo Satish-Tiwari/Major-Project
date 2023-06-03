@@ -1,0 +1,6 @@
+#sideBarMenu #showSideBarMenu{
+    display: none;
+}
+#sideBarMenu:hover #showSideBarMenu{
+    display: block;
+}
