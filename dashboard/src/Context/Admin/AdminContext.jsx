@@ -35,7 +35,10 @@ function AdminContext(props) {
 
   //  //! Logout Admin...
   const logoutAdminFun = async()=>{
+    //  Remove Admin Token
     await removeCookie("adminToken",{path:"/admin", expires:Date.now()});
+    //  Remove Sub-Admin Token
+    await removeCookie("adminToken",{path:"/", expires:Date.now()});
     toast.info("Logout Successfully");
   }
 
