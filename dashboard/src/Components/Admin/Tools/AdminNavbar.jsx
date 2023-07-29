@@ -61,7 +61,7 @@ function AdminNavbar(props) {
 
           <div className="flex h-full items-center">
             <div className="h-full md:px-5 px-2 flex items-center border-l-2">
-              <Link to={"http://localhost:3001"} target="_blank">
+              <Link to={"https://storedark.netlify.app/"} target="_blank">
                 <i
                   className="fa-solid fa-store md:scale-150 scale-125 text-gray-400"
                   title="Shop"

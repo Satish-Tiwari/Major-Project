@@ -8,7 +8,7 @@ function AdminContext(props) {
 
   const [cookie,setCookie,removeCookie] = useCookies(["adminToken"])
 
-  const baseUrl = "http://localhost:8000/api/v1";
+  const baseUrl = "https://backend-mp.onrender.com/api/v1";
   const [loadingState, setLoadingState] = useState(false);
 
   //  //!  [  .......... Admins Controller ..........  ]
