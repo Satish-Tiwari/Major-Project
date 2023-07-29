@@ -5,6 +5,7 @@ import createAdminContext from '../../../../Context/Admin/createAdminContext'
 import { useCookies } from 'react-cookie';
 
 import Loading from '../../../Utils/Loading';
+import {Buffer} from "buffer"
 
 function ViewSingleOrder() {
 
@@ -90,17 +91,29 @@ function ViewSingleOrder() {
                 <div className="my-2 shadow-lg rounded-md p-5">
                     <details open>
                     <summary className="p-5 cursor-pointer bg-green-700 text-white rounded-sm font-bold">Order Items <span className="font-bold ml-5 float-right">Total Items : {singleOrderState.orderItems.length}</span></summary>
-                    {singleOrderState.orderItems.map((items,index)=>{
-                    return <div className="my-5 px-5" key={items._id}>
-                      <hr />
-                      <span className="font-semibold bg-yellow-400 px-3 py-2">{index+1}</span>
-                      <p className="my-1">Product Id: <span className="font-medium ml-3">{items.productId}</span></p>
-                      <p className="my-1">Name: <span className="font-medium ml-3">{items.name}</span></p>
-                      <p className="my-1">Quantity: <span className="font-medium ml-3">{items.quantity}</span></p>
-                      <p className="my-1">Price: <span className="font-medium ml-3">{items.price}</span></p>
-                      <hr />
-                    </div>
-                    })}
+                      {singleOrderState.orderItems.map((e,index)=>{
+                        return <div className="my-5 px-5" key={e._id}>
+                          <hr />
+                          <span className="font-semibold bg-yellow-400 px-3 py-2 rounded-br-lg">{index+1}</span>
+                          <div className='flex'>
+                            {e.productId.images.map((e)=>{
+                              return <div key={e._id} className="w-fit">
+                                  <img
+                                      key={e._id}
+                                      src={`data:${e.mimetype};base64,${Buffer.from(e.buffer.data).toString("base64")}`}
+                                      alt={`${e.originalname}`}
+                                      className="h-[150px] rounded-md object-contain mix-blend-color-burn aspect-[3/2]"
+                                  />
+                              </div>
+                            })}
+                            <div className='ml-20 flex flex-col justify-center text-gray-600'>
+                              <p className="my-1 font-semibold text-gray-800">{e.productId.name}</p>
+                              <p className="my-1">Quantity: <span className="font-medium ml-3">{e.quantity}</span></p>
+                              <p className="my-1">Price: <span className="font-medium ml-3">{e.price}</span></p>
+                            </div>
+                          </div>
+                        </div>
+                      })}
                     </details>
                 </div>
                 <div className="my-2 shadow-lg rounded-md p-5">
