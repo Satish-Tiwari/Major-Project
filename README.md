@@ -8,5 +8,8 @@
 
 ➢ Technology used: <b> MERN Stack, Tailwind CSS, NLTK & Flask </b>
 
-➢ Website link: [Dark Store](https://dashboard-darkstore.netlify.app/)
+➢ Website link: 
+
+Admin Dashboard : &nbsp; [Dark Store (admin)](https://dashboard-darkstore.netlify.app/) &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Client Site : &nbsp;&nbsp;&nbsp; [Dark Store (user)](https://storedark.netlify.app/)
 
