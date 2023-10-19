@@ -1,0 +1,12 @@
+for creating python virtual environment
+    "python -m venv <path>"
+    python -m venv venv_name
+for activating that environment
+    ".\<env-name>\Scripts\activate"
+now, install flask
+    "pip install flask"
+for install nltk 
+    "pip install nltk"
+
+for dependencies 
+   "pip install -r requirements.txt"
