@@ -8,11 +8,11 @@
 ## 🌐 Live Demo
 
 <div align="left">
-  <a href="https://storedark.netlify.app/" target="_blank">
+  <a href="https://storedark.netlify.app/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Client%20Site-Visit%20Store-blue?style=for-the-badge&logo=react&logoColor=white" alt="Client Site">
   </a>
   &nbsp;&nbsp;
-  <a href="https://dashboard-darkstore.netlify.app/admin/dashboard" target="_blank">
+  <a href="https://dashboard-darkstore.netlify.app/admin/dashboard" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Admin%20Dashboard-Open%20Panel-orange?style=for-the-badge&logo=netlify&logoColor=white" alt="Admin Dashboard">
   </a>
 </div>
@@ -63,7 +63,7 @@ The core innovation of Dark Store lies in its integration with a dedicated **Sen
 
 ## 📂 Module Deep Dive
 
-### 🏠 1. Client (Customer Storefront)
+### 🏠 1. <a href="https://storedark.netlify.app/" target="_blank" rel="noopener noreferrer">Client (Customer Storefront)</a>
 The user-facing application where customers can browse and purchase products.
 - **Dynamic Catalog**: Real-time product fetching with category and keyword search.
 - **Sentiment-Aware UI**: Products are displayed based on their ranking calculated from user reviews.
@@ -71,7 +71,7 @@ The user-facing application where customers can browse and purchase products.
 - **User Dashboard**: Personal profile management and order history tracking.
 - **Interactive Reviews**: Real-time feedback submission that influences product visibility.
 
-### 📊 2. Dashboard (Admin Management)
+### 📊 2. <a href="https://dashboard-darkstore.netlify.app/admin/dashboard" target="_blank" rel="noopener noreferrer">Dashboard (Admin Management)</a>
 A powerful administrative tool for managing the entire e-commerce ecosystem.
 - **Analytical Overview**: Visualize site performance, total sales, and user growth.
 - **Inventory Control**: Full CRUD (Create, Read, Update, Delete) operations for products.
