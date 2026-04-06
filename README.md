@@ -11,7 +11,7 @@
   <a href="https://storedark.netlify.app/" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Client%20Site-Visit%20Store-blue?style=for-the-badge&logo=react&logoColor=white" alt="Client Site">
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://dashboard-darkstore.netlify.app/admin/dashboard" target="_blank" rel="noopener noreferrer">
     <img src="https://img.shields.io/badge/Admin%20Dashboard-Open%20Panel-orange?style=for-the-badge&logo=netlify&logoColor=white" alt="Admin Dashboard">
   </a>
@@ -179,6 +179,13 @@ Before starting the backend, you must configure its environment variables:
 4. Run the Python setup script to download VADER data: `python vader_lexiconDownload.py`
 5. Start the server: `python app.py`
 6. **Note**: This server runs on **Port 5000** and must be active for the ranking system to function.
+
+## 👨‍💻 Development Team
+
+1. **[Satish Tiwari](https://github.com/Satish-Tiwari)** (Developer)
+2. **[Shubham Mishra](https://github.com/buggiebug)** (Developer)
+3. **[Venus Tanwar](https://github.com/VENUSTANWAR)** (Developer)
+4. **Summy Kumar Verma** (Developer)
 
 ---
 
