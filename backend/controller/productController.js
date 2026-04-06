@@ -151,7 +151,7 @@ exports.createProductReview = catchAsyncError(async (req, res, next) => {
   const checkSentiment = [];
   checkSentiment.push(comment)
   const options = {
-    url:"http://127.0.0.1:5000",
+    url: process.env.SENTIMENT_SERVER_URL || "http://127.0.0.1:5000",
     method:"POST",
     json:{sentences:checkSentiment}
   }  
