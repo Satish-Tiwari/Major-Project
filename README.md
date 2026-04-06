@@ -11,7 +11,7 @@
   <a href="https://storedark.netlify.app/" target="_blank">
     <img src="https://img.shields.io/badge/Client%20Site-Visit%20Store-blue?style=for-the-badge&logo=react&logoColor=white" alt="Client Site">
   </a>
-  &nbsp;&nbsp;
+  &nbsp;
   <a href="https://dashboard-darkstore.netlify.app/admin/dashboard" target="_blank">
     <img src="https://img.shields.io/badge/Admin%20Dashboard-Open%20Panel-orange?style=for-the-badge&logo=netlify&logoColor=white" alt="Admin Dashboard">
   </a>
